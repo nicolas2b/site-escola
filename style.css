@@ -1,134 +1,139 @@
-*{
-   margin: 0;
-   padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Boldons&family=Cal+Sans&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-header a{
-color: white;
-text-decoration: none;
+body {
+  font-family: "Roboto", sans-serif;
 }
 
-header a:hover{
-   color:bisque;
-}
- 
-body{
-   font-family: "Roboto", sans-serif;
+header a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.cabecalho{
-   background-color: #424e61;
-   color: white;
-   display: flex;
-   justify-content: space around;
-   align-items: center;
-   padding: 24px 0;
+header a:hover {
+  color: bisque;
 }
 
-.cabecalho-lista-item{
-   display: inline-block;
-   margin: 0 16px;
-   font-size: 24px;
+.cabecalho {
+  background-color: #424e61; 
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 24px 0;
+  gap: 16px;
 }
 
-.cabecalho-imagem{
-   width: 120px;
-   height: 80px;
-   border-radius: 30%;
+.cabecalho-lista-item {
+  display: inline-block;
+  margin: 0 16px;
+  font-size: 24px;
 }
 
-.escola-imagem{
-   width: 30%;
+.cabecalho-imagem {
+  width: 120px;
+  height: 80px;
+  border-radius: 30%;
 }
 
-.escola{
-   background-image: linear-gradient(#424e61, #16cff8);
-   color: white;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   padding:24px 0;
+.escola {
+  background-image: linear-gradient(#424e61, #16cff8);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 0;
+  gap: 24px;
+  text-align: left;
 }
 
-.escola-conteudo{
-   width: 35%;
+.escola-imagem {
+  width: 30%;
 }
 
-#escola-titulo{
-   padding:24px 0;
+.escola-conteudo {
+  width: 60%;
 }
 
- .estudantes{
- padding: 24px 0;
- }
+#escola-titulo {
+  padding: 24px 0;
+}
 
- .estudantes-div{
-   text-align: center;
-   padding: 16px 0;
- }
+.estudantes {
+  padding: 24px 0;
+}
 
- .estudantes-todos{
-   display: grid;
-   grid-template-columns: 20% 20% 20% 20% 20%;
- }
+.estudantes-div {
+  text-align: center;
+  padding: 16px 0;
+}
 
- .estudantes-titulo{
-   text-align: center;
-   padding: 24px 0;
- }
-
- .estudantes-imagem {
-   width: 100px;
- }
-
- .estudante-icone {
-   width 24px;
-   padding: 4px 8px;
- }
-
- .rodape{
-   background-color: #424e61;
-   text-align: center;
-   color: white;
-   font-size: 25px;
- }
-
- .rodape-imagem{
-   height: 60px
-   padding: 12px 0;
- }
-
-
- @media (max-width: 768px) {
-   .cabecalho{
-      flex-direction: column;
-      text-align: center;
- }
-
- .cabecalho-lista-item{
-   display: block;
-   margin: 8px 0;
- }
-
- .escola{
-   flex-direction: column;
-   text-align: center;
-   padding: 16px;
- }
-
- .escola-imagem{
-   width: 80%;
-   margin-top: 16px;
- }
-  
- .escola-conteudo{
-  width: 100%;
- }
- 
- .estudantes-todos{
-  grid-template-columns: repeat(auto-fit, minmax (150px, 1fr));
+.estudantes-todos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
   padding: 0 16px;
- }
+}
+
+.estudantes-titulo {
+  text-align: center;
+  padding: 24px 0;
+}
+
+.estudantes-imagem {
+  width: 100px;
+}
+
+.estudantes-icone {
+  width: 24px;
+  padding: 4px 8px;
+}
+
+.rodape {
+  background-color: #424e61;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+}
+
+.rodape-imagem {
+  height: 60px;
+  padding: 12px 0;
+}
+
+@media (max-width: 768px) {
+  .cabecalho {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cabecalho-lista-item {
+    display: block;
+    margin: 8px 0;
+  }
+
+  .escola {
+    flex-direction: column;
+    text-align: center;
+    padding: 16px;
+  }
+
+  .escola-imagem {
+    width: 80%;
+    margin-top: 16px;
+  }
+
+  .escola-conteudo {
+    width: 100%;
+  }
+
+  .estudantes-todos {
+    padding: 0 16px;
+  }
 }
