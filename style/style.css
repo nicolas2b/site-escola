@@ -128,7 +128,7 @@ body{
  }
  
  .estudantes-todos{
-  grid-template-columns: repeat(auto-fit, minmax (150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   padding: 0 16px;
  }
 }
